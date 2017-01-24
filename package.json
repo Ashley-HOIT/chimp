@@ -1,0 +1,7 @@
+{
+  "name": "chimp_testing",
+  "version": "0.0.0",
+  "dependencies": {
+    "chimp": "^0.20.3"
+  }
+}
