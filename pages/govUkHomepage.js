@@ -1,8 +1,14 @@
-function govUkHomepage() {
-    this.url = 'https://www.gov.uk/';
-    this.title= 'Welcome to GOV.UK';
-    this.benefitsLink = '#services-and-information > div > div.categories-lists > ol:nth-child(1) > li:nth-child(1) > h3 > a';
-}
+var Page = require('./defaultPage.js')
+
+var govUkHomepage = Object.create(Page, {
+
+    url:   { get: function () { return 'https://www.gov.uk/'; } },
+    title:   { get: function () { return 'Welcome to GOV.UK'; } },
+    benefitsLink: {get: function () { return '=Benefits'; } }
+
+
+
+});
 
 
 module.exports = govUkHomepage;

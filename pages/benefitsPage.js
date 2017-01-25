@@ -1,10 +1,10 @@
-var Page = require('defaultPage');
+var Page = require('./defaultPage.js')
 
-function benefitsPage() {
+var benefitsPage = Object.create(Page, {
 
-    this.url = 'https://www.gov.uk/browse/benefits';
-this.title = 'Benefits - GOV.UK';
+    url:   { get: function () { return 'https://www.gov.uk/browse/benefits'; } },
+    title:   { get: function () { return 'Benefits - GOV.UK'; } },
 
-};
+});
 
 module.exports = benefitsPage;

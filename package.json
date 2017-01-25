@@ -1,7 +1,12 @@
 {
   "name": "chimp_testing",
   "version": "0.0.0",
+  "scripts": {
+    "test": "node_modules/.bin/chimp --mocha --mochaReporter='--reporter mocha-junit-reporter features/*.js'"
+  },
   "dependencies": {
-    "chimp": "^0.20.3"
+    "chimp": "^0.47.1",
+    "mocha": "^3.2.0",
+    "mocha-junit-reporter": "^1.13.0"
   }
 }
