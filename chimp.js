@@ -41,6 +41,7 @@ module.exports = {
 
     },
 
+
      // - - - - SELENIUM-STANDALONE
       seleniumStandaloneOptions: {
         // check for more recent versions of selenium here:

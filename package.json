@@ -2,7 +2,7 @@
   "name": "chimp_testing",
   "version": "0.0.0",
   "scripts": {
-    "test": "node_modules/.bin/chimp --browser=phantomjs"
+    "local-test": "chimp --env=local",
   },
   "dependencies": {
     "chimp": "^0.47.1",
